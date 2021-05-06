@@ -30,10 +30,9 @@ test('Order of elements is maintained', () => {
   expect(q.remove()).toEqual(undefined);
 });
 
-test('Order of elements is maintained', () => {
+test('returns false if queue is empty and true if queue is not empty', () => {
   const q = new Queue();
   q.add(1);
-  console.log(q);
   expect(q.isEmpty()).toEqual(false);
 
   q.remove();
