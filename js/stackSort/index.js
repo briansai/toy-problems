@@ -1,6 +1,6 @@
 // Given a stack of integers, sort it in descending order using another temporary stack
 
-const sortStack = (numbers) => {
+const stackSort = (numbers) => {
   let tmpStack = [];
 
   while (numbers.length) {
@@ -17,4 +17,4 @@ const sortStack = (numbers) => {
   return tmpStack;
 };
 
-module.exports = sortStack;
+module.exports = stackSort;

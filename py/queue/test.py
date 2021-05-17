@@ -31,6 +31,4 @@ class TestMain(unittest.TestCase):
     result_empty = new_queue.is_empty()
     self.assertFalse(result_empty)
 
-
-
 unittest.main()
