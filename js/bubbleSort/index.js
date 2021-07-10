@@ -13,16 +13,20 @@ const bubbleSort = (numbers) => {
   // // if current number is greater than the nxt number,
   // // swap the current and next number
   // // return numbers
+  let len = numbers.length;
   let sorted = false;
   while (!sorted) {
     sorted = true;
-    for (let x = 0; x < numbers.length; x++) {
+    for (let x = 0; x < len - 1; x++) {
       if (numbers[x] > numbers[x + 1]) {
         sorted = false;
         swap(x, x + 1, numbers);
       }
+      console.log(numbers);
     }
+    len--;
   }
+  console.log(numbers);
   return numbers;
 };
 
