@@ -1,11 +1,3 @@
-const swap = (i, j, array) => {
-  const temp = array[i];
-  array[i] = array[j];
-  array[j] = temp;
-
-  return array;
-};
-
 const selectionSort = (numbers) => {
   for (let x = 0; x < numbers.length; x++) {
     let min = x;
